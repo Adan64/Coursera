@@ -1,13 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pruebas</title>
+	<title>Our Menu</title>
+	<style>
+		.container {
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			flex-wrap: wrap;
+			margin: 50px 0;
+		}
+		.box {
+			width: 500px;
+      height: 100px;
+			padding: 25px;
+			border: 3px solid black;
+			text-align: left;
+      
+			margin-bottom: 20px;
+			position: relative;
+      background-color: rgb(164, 164, 164);
+		}
+		.box h3 {
+			margin-top: 0;
+		}
+		#inner-box-1 {
+			position: absolute;
+      background-color: pink;
+			top: 0px;
+			right: 0px;
+			padding: 5px;
+			border: 3px solid black;
+      height: 10px;
+      width: 50px;
+		}
+		#inner-box-2 {
+			position: absolute;
+      background-color: rgb(250, 70, 70);
+      color: #ffff;
+			top: 0px;
+			right: 0px;
+			padding: 5px;
+			border: 3px solid black;
+      height: 10px;
+      width: 50px;
+		}
+		#inner-box-3 {
+			position: absolute;
+      background-color: rgb(234, 226, 154);
+			top: 0px;
+			right: 0px;
+			padding: 5px;
+			border: 3px solid black;
+      height: 10px;
+      width: 50px;
+		}
+
+	</style>
 </head>
 <body>
-    <div>Hola, esto es una prueba de html dejame hacer cambiosssssssssssssssssssssssssssssssssssssssssssssssssssssssss</div>
-    
+	<h1 style="text-align: center;">Our Menu</h1>
+	<div class="container">
+		<div class="box">
+
+			  <p>Ut pretium urna nisl, eget ultrices nisi facilisis a. Proin vel eros euismod, feugiat eros vitae, vestibulum quam.</p>
+
+			<div id="inner-box-1">chicken
+        <p id="chicken">chicken</p>
+			</div>
+
+		</div>
+		<div class="box">
+
+			<p>Ut pretium urna nisl, eget ultrices nisi facilisis a. Proin vel eros euismod, feugiat eros vitae, vestibulum quam.</p>
+			<div id="inner-box-2">Beef
+
+			</div>
+		</div>
+		<div class="box">
+
+			<p>Aliquam convallis lobortis sapien, ac volutpat sapien tempor a. Sed vestibulum velit vel libero molestie, nec commodo nisi vestibulum.</p>
+			<div id="inner-box-3">Sushi
+			</div>
+		</div>
+	</div>
 </body>
 </html>
