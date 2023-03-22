@@ -4,8 +4,89 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="/style.css">
+	<link rel="stylesheet" href="./style.css">
 	<title>Assignment Solution for Module</title>
+	<style>
+		
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 50px 0;
+
+    width: 100%;
+
+}
+.box {
+    width: 400px;
+    height: 100px;
+    padding: 25px;
+    border: 3px solid black;
+    text-align: left;
+    margin-bottom: 20px;
+    position: relative;
+    background-color: rgb(164, 164, 164); 
+    overflow: auto;
+    display: flex;
+}
+.box h3 {
+    margin-top: 0;
+}
+#inner-box-1 {
+    position: absolute;
+background-color: pink;
+    top: 0px;
+    right: 0px;
+    padding: 5px;
+    border: 3px solid black;
+height: 10px;
+width: 50px;
+}
+#inner-box-2 {
+    position: absolute;
+    background-color: rgb(250, 70, 70);
+    color: #ffff;
+    top: 0px;
+    right: 0px;
+    padding: 5px;
+    border: 3px solid black;
+    height: 10px;
+    width: 50px;
+}
+#inner-box-3 {
+    position: absolute;
+background-color: rgb(234, 226, 154);
+    top: 0px;
+    right: 0px;
+    padding: 5px;
+    border: 3px solid black;
+height: 10px;
+width: 50px;
+}
+
+.row {
+    width: 100%;
+  }
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+
+  #inner-box-1{
+    width: 50px;
+
+  }
+  }
+  
+  /********** Medium devices only **********/
+  @media (min-width: 768px) and (max-width: 991px) {
+    #inner-box-3{
+
+    }
+    
+  }
+
+	</style>
 </head>
 
 <body>
