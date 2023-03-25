@@ -1,78 +1,68 @@
-
-.container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 50px 0;
-
-    width: 100%;
-
-}
-.box {
-    width: 400px;
-    height: 100px;
-    padding: 25px;
-    border: 3px solid black;
-    text-align: left;
-    margin-bottom: 20px;
-    position: relative;
-    background-color: rgb(164, 164, 164); 
-    overflow: auto;
-    display: flex;
-}
-.box h3 {
-    margin-top: 0;
-}
-#inner-box-1 {
-    position: absolute;
-background-color: pink;
-    top: 0px;
-    right: 0px;
-    padding: 5px;
-    border: 3px solid black;
-height: 10px;
-width: 50px;
-}
-#inner-box-2 {
-    position: absolute;
-    background-color: rgb(250, 70, 70);
-    color: #ffff;
-    top: 0px;
-    right: 0px;
-    padding: 5px;
-    border: 3px solid black;
-    height: 10px;
-    width: 50px;
-}
-#inner-box-3 {
-    position: absolute;
-background-color: rgb(234, 226, 154);
-    top: 0px;
-    right: 0px;
-    padding: 5px;
-    border: 3px solid black;
-height: 10px;
-width: 50px;
+* {
+	box-sizing: border-box;
 }
 
-.row {
-    width: 100%;
-  }
+body {
+	font-family: "Arial", sans-serif;
+}
 
-/********** Large devices only **********/
+h1 {
+	text-align: center;
+	font-size: 175%;
+}
+
+.col {
+	float: left;
+	width: 100%;
+}
+
+.primDIV {
+    background-color: #e7e9eb;
+	padding: 30px 5px 5px 5px;
+	margin: 10px;
+	position: relative;
+	border: 1px solid black;
+
+}
+
+.section-title {
+	position: absolute;
+	top: -1px;
+	right: -1px;
+	border: 1px solid black;
+	width: 120px;
+	text-align: center;
+	font-size: 125%;
+}
+
+#div1 > .section-title {
+	background-color: #dd97bc;
+}
+
+#div2 > .section-title {
+	background-color: #d53a3a;
+	color: #f4f4f4;
+}
+
+#div3 > .section-title {
+	background-color: #ecde8e;
+}
+
+/********** Large devices only (Desktop) **********/
 @media (min-width: 992px) {
+	.col-lg {
+		width: 33.33%;
+	}
+}
 
-  #inner-box-1{
-    width: 50px;
+/********** Medium devices only (Tablet) **********/
+@media (min-width: 768px) and (max-width: 991px) {
+	.col-md {
+		width: 50%;
+	}
+}
 
-  }
-  }
-  
-  /********** Medium devices only **********/
-  @media (min-width: 768px) and (max-width: 991px) {
-    #inner-box-3{
+/********** Medium devices only (Mobile) **********/
+@media (max-width: 767px) {
 
-    }
-    
-  }
+}
