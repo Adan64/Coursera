@@ -1,0 +1,68 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Arial", sans-serif;
+}
+
+h1 {
+	text-align: center;
+	font-size: 175%;
+}
+
+.col {
+	float: left;
+	width: 100%;
+}
+
+.primDIV {
+    background-color: #e7e9eb;
+	padding: 30px 5px 5px 5px;
+	margin: 10px;
+	position: relative;
+	border: 1px solid black;
+
+}
+
+.section-title {
+	position: absolute;
+	top: -1px;
+	right: -1px;
+	border: 1px solid black;
+	width: 120px;
+	text-align: center;
+	font-size: 125%;
+}
+
+#div1 > .section-title {
+	background-color: #dd97bc;
+}
+
+#div2 > .section-title {
+	background-color: #d53a3a;
+	color: #f4f4f4;
+}
+
+#div3 > .section-title {
+	background-color: #ecde8e;
+}
+
+/********** Large devices only (Desktop) **********/
+@media (min-width: 992px) {
+	.col-lg {
+		width: 33.33%;
+	}
+}
+
+/********** Medium devices only (Tablet) **********/
+@media (min-width: 768px) and (max-width: 991px) {
+	.col-md {
+		width: 50%;
+	}
+}
+
+/********** Medium devices only (Mobile) **********/
+@media (max-width: 767px) {
+
+}
